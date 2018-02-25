@@ -152,6 +152,16 @@ nav a:hover{
   background:#ccc;
 }
 
+#toggle-sidebar{
+  float:right;
+  border-left:1px solid #ccc;
+}
+
+@media screen and (max-width: 767px){
+  #toggle-sidebar{
+    display:none;
+  }
+}
 
 
 /*
@@ -160,6 +170,17 @@ nav a:hover{
 
 aside{
   background:#eee;
+}
+
+#sidebar{
+  position:relative;
+  top:0;
+  right:0;
+  transition: all 1s;
+}
+
+#sidebar.collapsed{
+  opacity:0;
 }
 
 
